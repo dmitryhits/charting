@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.ticker as ticker
 from pandas import datetools, DatetimeIndex
-from pandas.tseries.resample import _get_range_edges
-import pandas.lib as lib
+#from pandas.tseries.resample import _get_range_edges
+#import pandas.lib as lib
 
 class TimestampLocator(ticker.Locator):
     """  

@@ -28,4 +28,4 @@ def figsize(width, height):
 # this allows us to have cell specific plots
 shell = IPython.InteractiveShell._instance
 if IN_NOTEBOOK and shell:
-    shell.register_post_execute(reset_figure)
+    shell.events.register('post_run_cell', reset_figure)
