@@ -45,7 +45,7 @@ def series_plot(self, label=None, *args, **kwargs):
     fig.plot(str(label), self, *args, **kwargs)
 
 pd.Series.fplot = series_plot
-pd.TimeSeries.fplot = series_plot
+#pd.Series.fplot = series_plot
 
 def df_plot(self, *args, **kwargs):
     force_plot = kwargs.pop('force_plot', False)
